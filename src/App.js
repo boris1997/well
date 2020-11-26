@@ -1,11 +1,15 @@
 import './App.css';
 import Navbar from './components/Navbar';
-
-function App() {
+import { GlobalStyles } from '../src/styles/GlobalStyle';
+import Home from './components/Home';
+const App = () => {
   return (
-    <div className="App">
+    <>
       <Navbar />
-    </div>
+      <Home />
+      <GlobalStyles />
+
+    </>
   );
 }
 
