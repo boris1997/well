@@ -8,7 +8,7 @@ function Home() {
         display: flex;
         justify-content: space-between;
         height: 75%;
-        margin-top: 5rem
+        margin-top: 10rem
         `
     const HomeContent = styled.div`
         display: flex;

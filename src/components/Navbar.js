@@ -7,9 +7,12 @@ import { Container } from '../styles/GlobalStyle';
 
 function Navbar() {
     const Navbar = styled.div`
-        height: 15%;
+        height: 7rem;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        position: fixed;
+        top: 0;
         `
     const NavbarTop = styled.div`
    height: 50%;
@@ -40,15 +43,39 @@ function Navbar() {
     display: flex;
     justify-content: space-between;
     `
+    /* 
+        console.log(Container)
+        console.log(Container.componentStyle) */
 
-  /*   const NavbarContent = styled.div`
-    display: flex;
-    justify-content: space-between;
-    ` */
+    const RelativeContainer = styled(Container)`
+    position: relative;
+     &:after {
+    position: absolute;
+    content: "";
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #0C6DB2;
+  }
+`;
+    /*   Container = styled.div`
+      position: relative;
+      ` */
+
+
+
+    /*   const NavbarContent = styled.div`
+      display: flex;
+      justify-content: space-between;
+      ` */
 
     return (
         <Navbar>
-            <Container>
+            <RelativeContainer>
                 <NavbarTop>
                     <Label>Колодцы</Label>
                 </NavbarTop>
@@ -59,7 +86,7 @@ function Navbar() {
                     <Li><A>О нас</A></Li>
                     <Li><A>Контакты</A></Li>
                 </Ul>
-            </Container>
+            </RelativeContainer>
         </Navbar>
     )
 }

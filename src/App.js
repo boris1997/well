@@ -2,6 +2,10 @@ import './App.css';
 import { GlobalStyles } from '../src/styles/GlobalStyle';
 import Header from './components/Header';
 import Services from './components/Services';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import AboutUs from './components/AboutUs';
+import HowWork from './components/HowWork';
 /* import Header from '../src/Header';
  */
 
@@ -17,8 +21,11 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      <Navbar />
+      <Home />
       <Services />
+      <AboutUs />
+      <HowWork />
       <GlobalStyles />
 
     </>
