@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { createGlobalStyle } from "styled-components"
+import { Link } from 'react-scroll';
 
 export const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
@@ -7,8 +8,10 @@ export const GlobalStyles = createGlobalStyle`
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   color: #0C6DB2;
-   background: #f2f8f9;
+ /*   color: #0C6DB2; */
+   color: #ffffff;
+ /*   background: #f2f8f9; */
+   background: #191919;
 
 } 
 
@@ -23,9 +26,17 @@ body {
 /* #f9feff; */
 /* #fafaff; */
 /* #f2f8f9; */
+/* #eff1f5 */
+
+
+
+/* black theme*/
+/* background: #191919; */
+/* background: #1f2022; */
+
 
 export const Container = styled.div`
-   max-width: 1300px;
+max-width: 1300px;
    height: 100%;
    width: 100%;
    overflow: hidden;
@@ -33,22 +44,22 @@ export const Container = styled.div`
 `
 export const Info = styled.h2`
    font-size: 1.2rem;
-   color: #0C6DB2;
 `
 export const MainTitleSection = styled.h1`
    font-size: 2rem;
-   color: #0C6DB2;
+   /* color: #0C6DB2; */
+   color: #ffffff;
    position: relative;
    &::before {
       content: "";
-     background-color: #0C6DB2;
+     background-color: #ffffff30;
       position: absolute;
       left: 0;
       right: 0;
       bottom: -0.5rem;
       display: block;
-      width: 9%;
-      height: 1px;
+      width: 100%;
+      height: .5px;
     }
 
 `
@@ -67,10 +78,10 @@ export const Content = styled.div`
         display: grid;
        /*  grid-template-columns: repeat(auto-fit, minmax(220px, 420px)); */
        margin-top: 5rem;
-       padding-bottom: 1rem;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, 1fr);
-@media screen and (max-width: 1024px) { 
+           padding-bottom: 7rem;
+       grid-template-columns: repeat(3, 1fr);
+       grid-template-rows: repeat(3, 1fr);
+       @media screen and (max-width: 1024px) { 
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -80,16 +91,25 @@ grid-row-gap: 7.5rem;
 
 export const Item = styled.div`
      display: flex;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
      flex-direction: column;
-     background:  #f2f8f9;
-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px #FFFFFF;
-border-radius: 30px;
-    height: 18rem;
-    width: 14rem;
-    margin-left: 25%;
-    align-items: center;
-    justify-content: center;
-
+    
+   /*   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px #FFFFFF; */
+     box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px #FFFFFF20;
+     border-radius: 30px;
+     height: 18rem;
+     width: 14rem;
+     justify-self: center;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s linear;
+     :hover{
+         transform: scale(1.1) ;
+         /* box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15), -3px -3px 6px rgba(255, 255, 255, 0.85); */
+         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), -1px -1px 2px #FFFFFF20;
+     }
+ 
         `
 export const ItemTitle = styled.h2`
       order: 2;
@@ -104,4 +124,7 @@ export const ItemImg = styled.img`
        height: 7rem;
            object-fit: contain;
         `
+
+
+
 /* export default { Global, Container } */

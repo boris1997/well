@@ -4,7 +4,7 @@ import { Container, Info } from '../styles/GlobalStyle'
 import Well from '../images/Well.png'
 
 function Home() {
-    const Home = styled.div`
+    const Home = styled.section`
         display: flex;
         justify-content: space-between;
         height: 75%;
@@ -38,13 +38,19 @@ function Home() {
     const HomeCallToAction = styled.button`
     
         border-radius: 50px;
-    border: 0.2rem solid #0C6DB2;
+        border: none;
     background: transparent;
     position: relative;
     font-size: 1.2rem;
     cursor: pointer;
     height: 4rem;
     width: 17rem;
+   /*  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), -2px -2px 4px #FFFFFF; */
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 1px #FFFFFF20;
+   :hover {
+          box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 1px #FFFFFF20;
+          font-size: 1.15rem
+   }
         `
     const HomeInfo = styled.div`
             display: flex;
@@ -55,7 +61,7 @@ function Home() {
             `
 
     return (
-        <Home>
+        <Home className='home'>
             <Container>
                 <HomeContent>
                     <WellImg>

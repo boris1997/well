@@ -7,9 +7,7 @@ function HowWork() {
 
     /* const [active, setActive] = useState() */
 
-    const HowWork = styled.div`
-        display: flex;
-        justify-content: space-between;
+    const HowWork = styled.section`
         margin-top: 12rem
         `
     const ArrowObject = styled.img`
@@ -19,21 +17,33 @@ function HowWork() {
 
     const ItemAbout = styled(Item)`
     width: 15rem;
-    height: 15rem;
-    border-radius: 1000px;
+    height: 20rem;
+    border-radius: 30px;
     `
     const ContentHow = styled(Content)`
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
     grid-row-gap: 0.5rem;
+    @media screen and (max-width: 1024px) { 
+    grid-template-columns: repeat(2, 1fr);
+     grid-row-gap:5.5rem;
+}
     `
+    const ItemAos = styled.div`
 
+    justify-self: center;`
     const ItemAboutArrow = styled(ItemAbout)`
-    width: 15rem;
-    height: 15rem;
   box-shadow: none;
     `
 
+
+
+
+
+
     const ItemAboutHidden = styled(Item)`
     visibility: hidden;
+    height: 0;
     `
 
 
@@ -49,7 +59,7 @@ function HowWork() {
     `
 
     return (
-        <HowWork>
+        <HowWork className='work'>
             <Container>
 
                 <MainTitleSection>
@@ -57,20 +67,49 @@ function HowWork() {
                 </MainTitleSection>
 
                 <ContentHow>
-                    <ItemAbout><ItemTitleAbout>Вы связываетесь с нам по телефону или по почте</ItemTitleAbout><i class="ri-medal-2-line" style={itemIcon}></i></ItemAbout>
-                    <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
-                    <ItemAbout active><ItemTitleAbout> Мы Вас консультируем и если Вас все устраивает — заключаем договор
+                    <ItemAos data-aos="fade-right"
+                        data-aos-offset="-370"
+                        data-aos-delay="0"
+                        data-aos-duration="700"
+                        data-aos-easing="linear"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-bottom">
+                        <ItemAbout><ItemTitleAbout>Вы связываетесь с нам по телефону или по почте</ItemTitleAbout><i className="ri-phone-line" style={itemIcon}></i></ItemAbout></ItemAos>
+                    {/*                     <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
+ */}                    <ItemAos data-aos="fade-right"
+                        data-aos-offset="-150"
+                        data-aos-delay="300"
+                        data-aos-duration="700"
+                        data-aos-easing="linear"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-bottom"> <ItemAbout active><ItemTitleAbout> Мы Вас консультируем и если Вас все устраивает — заключаем договор
 
-                        </ItemTitleAbout ><i class="ri-draft-line" style={itemIcon}></i></ItemAbout>
-                    <ItemAboutHidden></ItemAboutHidden>
-                    <ItemAboutHidden></ItemAboutHidden>
+                        </ItemTitleAbout ><i className="ri-draft-line" style={itemIcon}></i></ItemAbout></ItemAos>
+                    {/*                     <ItemAboutHidden></ItemAboutHidden>
+                    <ItemAboutHidden></ItemAboutHidden> */}
 
-                    <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
-
-                    <ItemAbout><ItemTitleAbout>Мы доставляем все материалы на место (бесплатно) и начинаем работу</ItemTitleAbout><i className='ri-customer-service-line ItemIcon' style={itemIcon}></i></ItemAbout>
-                    <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
-                    <ItemAbout><ItemTitleAbout>Вы принимаете нашу работу, оплачиваете остаток</ItemTitleAbout><i className='ri-customer-service-line ItemIcon' style={itemIcon}></i></ItemAbout>
-
+                    {/*                     <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
+ */}
+                    <ItemAos data-aos="fade-right"
+                        data-aos-offset="-150"
+                        data-aos-delay="600"
+                        data-aos-duration="700"
+                        data-aos-easing="linear"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-bottom">  <ItemAbout><ItemTitleAbout>Мы доставляем все материалы на место (бесплатно) и начинаем работу</ItemTitleAbout><i className='ri-truck-line ItemIcon' style={itemIcon}></i></ItemAbout></ItemAos>
+                    {/*                     <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
+ */}                   <ItemAos data-aos="fade-right"
+                        data-aos-offset="-150"
+                        data-aos-delay="900"
+                        data-aos-duration="700"
+                        data-aos-easing="linear"
+                        data-aos-mirror="true"
+                        data-aos-once="false"
+                        data-aos-anchor-placement="top-bottom">   <ItemAbout><ItemTitleAbout>Вы принимаете нашу работу, оплачиваете остаток</ItemTitleAbout><i className='ri-thumb-up-line ItemIcon' style={itemIcon}></i></ItemAbout>
+                    </ItemAos>
 
                 </ContentHow>
 

@@ -4,7 +4,7 @@ import Home from './Home'
 import Navbar from './Navbar'
 
 function Header() {
-    const Header = styled.div`
+    const Header = styled.header`
         height: 41rem;
         position: relative;
        
