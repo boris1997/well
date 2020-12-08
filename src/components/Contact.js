@@ -16,24 +16,34 @@ max-width: 1350px
       height: 38rem;
         margin-top: 5rem;
         /* align-items: center; */
-        `
-    const FeedbackContentInner = styled.div`
-  /*  display: flex; */
-   flex-direction: column;
+         @media screen and (max-width: 1280px) { 
+      height: 34.5rem;
+}
+`
+const FeedbackContentInner = styled.div`
+/*  display: flex; */
+flex-direction: column;
 /*    box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.1),  -2px -2px 4px #FFFFFF;
 
- */
- box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px #FFFFFF20;   border-radius: 30px;
-        /* align-items: center; */
-        width: 32rem;
-        padding-top: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        margin-bottom: 2rem;
-    `
+*/
+box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px #FFFFFF20;   border-radius: 30px;
+/* align-items: center; */
+width: 32rem;
+padding-top: 2rem;
+padding-left: 2rem;
+padding-right: 2rem;
+margin-bottom: 2rem;
+@media screen and (max-width: 1280px) { 
+        width: 29rem;
+
+}
+`
     const FeedbackContentTitle = styled.h1`
    font-size: 1.4rem;
    text-align: center;
+   @media screen and (max-width: 1280px) { 
+          font-size: 1.2rem;
+}
     `
     const FeedbackContentItem = styled.div`
    display: flex;
@@ -57,6 +67,9 @@ max-width: 1350px
    display: flex;
    font-size: 1.2rem;
    flex-direction: column;
+    @media screen and (max-width: 1280px) { 
+          font-size: 1rem;
+}
     `
 
     const FeedbackInput = styled.input`
@@ -76,6 +89,9 @@ padding-left: 1rem;
          border-radius: 1260px;
          outline: none;
    }
+    @media screen and (max-width: 1280px) { 
+            height: 2.2rem;
+}
 
     `
     const FeedbackInputBtn = styled(FeedbackInput)`  
@@ -87,11 +103,18 @@ padding-left: 1rem;
      font-size: 1.2rem;
      &:focused{
 /*         box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px #FFFFFF;
- */      box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px #FFFFFF20;}
+ */     
+ box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px #FFFFFF20;
+}
      :hover{
+         /* transform: scale(1.2); */
          font-size: 1.15rem;
 /*         box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.1), inset -2px -2px 4px #FFFFFF;
- */    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20; }
+ */    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20; 
+     }
+        @media screen and (max-width: 1280px) { 
+          font-size: 1rem;
+}
     `
 
     return (

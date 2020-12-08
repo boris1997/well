@@ -71,6 +71,10 @@ export const ServiceItemTitle = styled.h2`
     font-size: 1rem;
     width: 90%;
     justify-content: center;
+
+   @media screen and (max-width: 600px) { 
+     font-size: 0.8rem;
+   }
         `
 
 export const Content = styled.div`
@@ -81,13 +85,26 @@ export const Content = styled.div`
            padding-bottom: 7rem;
        grid-template-columns: repeat(3, 1fr);
        grid-template-rows: repeat(3, 1fr);
+       
        @media screen and (max-width: 1024px) { 
     grid-template-columns: repeat(2, 1fr);
 }
+       @media screen and (max-width: 600px) { 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+   
+}
+    
 
 grid-column-gap: 1fr;
 grid-row-gap: 7.5rem;
         `
+
+export const ItemAos = styled.div` 
+justify-self: center;
+`
 
 export const Item = styled.div`
      display: flex;
@@ -109,6 +126,22 @@ export const Item = styled.div`
          /* box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15), -3px -3px 6px rgba(255, 255, 255, 0.85); */
          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), -1px -1px 2px #FFFFFF20;
      }
+//      @media screen and (max-width: 1280px) { 
+//            width: 50%;
+//            height: 30%;
+// }
+//   
+@media screen and (max-width: 600px) { 
+  //  height: auto;
+  //    width: auto;
+         width: 100%;
+    height: 100%;
+         padding-top: 3rem;
+    padding-bottom: 3rem;
+     border-radius: 20px;
+} 
+
+
  
         `
 export const ItemTitle = styled.h2`
@@ -118,11 +151,31 @@ export const ItemTitle = styled.h2`
       font-size: 1rem;
       width: 90%;
       justify-content: center;
+         @media screen and (max-width: 600px) { 
+     font-size: 0.8rem;
+   }
+    @media screen and (max-width: 400px) { 
+     font-size: 0.5rem;
+     text-align: center;
+   }
       `
 
 export const ItemImg = styled.img`
        height: 7rem;
            object-fit: contain;
+@media screen and (max-width: 600px) { 
+ height: 6rem;
+
+} 
+@media screen and (max-width: 500px) { 
+ height: 5rem;
+
+} 
+@media screen and (max-width: 400px) { 
+ height: 4rem;
+
+} 
+
         `
 
 

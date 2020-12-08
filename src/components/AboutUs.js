@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container, Content, Item, ItemImg, ItemTitle, MainTitleSection } from '../styles/GlobalStyle'
 import 'remixicon/fonts/remixicon.css'
+import { ItemAosFourth, ItemAosThird } from './Services'
 function AboutUs() {
 
     const AboutUs = styled.section`
@@ -11,8 +12,19 @@ function AboutUs() {
     const ContentAbout = styled(Content)`
 
 grid-template-rows: repeat(2, 1fr);
+grid-row-gap: 5.3rem;
 @media screen and (max-width: 1024px) { 
     grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 600px) { 
+    grid-template-rows: repeat(2, 1fr);
+}
+@media screen and (max-width: 490px) { 
+   grid-template-rows: repeat(2, 0.8fr);
 }
 `
     const ItemAbout = styled(Item)`
@@ -27,7 +39,20 @@ grid-template-rows: repeat(2, 1fr);
         /*  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0); */
         /* box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20; */
         box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20;
-     } 
+    } 
+            @media screen and (max-width: 600px) { 
+       width: 14rem;
+        height: 14rem;
+    }
+            @media screen and (max-width: 550px) { 
+       width: 12rem;
+        height: 12rem;
+    }
+    @media screen and (max-width: 490px) { 
+       width: 10rem;
+        height: 10rem;
+   
+    }
  
     `
     const ItemAboutInner = styled(ItemAbout)`
@@ -45,22 +70,68 @@ grid-template-rows: repeat(2, 1fr);
               box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9),  -1px -1px 2px #FFFFFF20;
 
      }
+           @media screen and (max-width: 600px) { 
+   width: 12.25rem;
+    height: 12.25rem;
+}
+  @media screen and (max-width: 550px) { 
+       width: 10.5rem;
+        height: 10.5rem;
+        i {
+            font-size: 4rem !important;
+        }
+    }
+  @media screen and (max-width: 490px) { 
+       width: 8.7rem;
+        height: 8.7rem;
+    i {
+            font-size: 3rem !important;
+        }
+    }
  
     `
     const itemIcon = {
         fontSize: '5rem'
+
     }
 
     const ItemAos = styled.div`
-    height: 14rem;
-    width: 14rem;
-    justify-self: center;`
+
+    justify-self: center;
+  /*    @media screen and (max-width: 490px) { 
+     /*   width: 10rem;
+        height: 10rem; */
+   
+    } */
+    `
+    const ItemAosAboutThird = styled(ItemAosThird)`
+       @media screen and (max-width: 490px) { 
+       width: auto ;
+        height: 12rem !important;
+    }
+    `
+    const ItemAosAboutFourth = styled(ItemAosFourth)`
+       @media screen and (max-width: 490px) { 
+       width: auto ;
+        height: 12rem !important;
+    }
+    `
+
 
 
     const ItemTitleAbout = styled(ItemTitle)`
     border-radius: 1000px;
     width: 60%;
     text-align: center;
+     @media screen and (max-width: 550px) { 
+ font-size: 0.6rem;
+        margin-top: 1rem;
+    }
+     @media screen and (max-width: 490px) { 
+ font-size: 0.5rem;
+       
+    }
+
     `
 
     return (
@@ -93,7 +164,7 @@ grid-template-rows: repeat(2, 1fr);
                         <ItemAbout><ItemAboutInner><ItemTitleAbout>Лидеры в сфере услуг по обслуживанию колодцев
                         </ItemTitleAbout><i className="ri-line-chart-line" style={itemIcon}></i></ItemAboutInner></ItemAbout>
                     </ItemAos>
-                    <ItemAos data-aos="fade-up"
+                    <ItemAosAboutThird data-aos="fade-up"
                         data-aos-offset="-270"
                         data-aos-delay="300"
                         data-aos-duration="700"
@@ -105,9 +176,9 @@ grid-template-rows: repeat(2, 1fr);
                             <ItemTitleAbout>Работаем по договору, даем гарантии
 
                         </ItemTitleAbout><i className="ri-draft-line" style={itemIcon}></i></ItemAboutInner></ItemAbout>
-                    </ItemAos>
-                    <ItemAos data-aos="fade-up"
-                        data-aos-offset="-370"
+                    </ItemAosAboutThird>
+                    <ItemAosAboutFourth data-aos="fade-up"
+                        data-aos-offset="-270"
                         data-aos-delay="0"
                         data-aos-duration="700"
                         data-aos-easing="linear"
@@ -119,9 +190,9 @@ grid-template-rows: repeat(2, 1fr);
                                 <ItemTitleAbout>Максимальный результат, за короткое время
                         </ItemTitleAbout><i className="ri-time-line " style={itemIcon}></i>
                             </ItemAboutInner></ItemAbout>
-                    </ItemAos>
-                    <ItemAos data-aos="fade-up"
-                        data-aos-offset="-370"
+                    </ItemAosAboutFourth>
+                    <ItemAosAboutThird data-aos="fade-up"
+                        data-aos-offset="-270"
                         data-aos-delay="150"
                         data-aos-duration="700"
                         data-aos-easing="linear"
@@ -131,10 +202,10 @@ grid-template-rows: repeat(2, 1fr);
                         <ItemAbout>
                             <ItemAboutInner>
                                 <ItemTitleAbout>Cовременные технические средства</ItemTitleAbout><i className="ri-flask-line " style={itemIcon}></i>
-                            </ItemAboutInner></ItemAbout></ItemAos>
-                    <ItemAos data-aos="fade-up"
-                        data-aos-offset="-370"
-                        data-aos-delay="150"
+                            </ItemAboutInner></ItemAbout></ItemAosAboutThird>
+                    <ItemAosAboutFourth data-aos="fade-up"
+                        data-aos-offset="-270"
+                        data-aos-delay="300"
                         data-aos-duration="700"
                         data-aos-easing="linear"
                         data-aos-mirror="true"
@@ -142,7 +213,7 @@ grid-template-rows: repeat(2, 1fr);
                         data-aos-anchor-placement="top-center"><ItemAbout>
                             <ItemAboutInner>
                                 <ItemTitleAbout>Всегда на связи, готовы принять заказ</ItemTitleAbout><i className='ri-customer-service-line ItemIcon' style={itemIcon}></i>
-                            </ItemAboutInner></ItemAbout></ItemAos>
+                            </ItemAboutInner></ItemAbout></ItemAosAboutFourth>
 
 
                 </ContentAbout>

@@ -15,11 +15,7 @@ function HowWork() {
         width: 100px;
         `
 
-    const ItemAbout = styled(Item)`
-    width: 15rem;
-    height: 20rem;
-    border-radius: 30px;
-    `
+
     const ContentHow = styled(Content)`
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(1,1fr);
@@ -32,9 +28,9 @@ function HowWork() {
     const ItemAos = styled.div`
 
     justify-self: center;`
-    const ItemAboutArrow = styled(ItemAbout)`
+/*     const ItemAboutArrow = styled(ItemAbout)`
   box-shadow: none;
-    `
+    ` */
 
 
 
@@ -75,7 +71,7 @@ function HowWork() {
                         data-aos-mirror="true"
                         data-aos-once="false"
                         data-aos-anchor-placement="top-bottom">
-                        <ItemAbout><ItemTitleAbout>Вы связываетесь с нам по телефону или по почте</ItemTitleAbout><i className="ri-phone-line" style={itemIcon}></i></ItemAbout></ItemAos>
+                        <Item><ItemTitleAbout>Вы связываетесь с нам по телефону или по почте</ItemTitleAbout><i className="ri-phone-line" style={itemIcon}></i></Item></ItemAos>
                     {/*                     <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
  */}                    <ItemAos data-aos="fade-right"
                         data-aos-offset="-150"
@@ -84,9 +80,9 @@ function HowWork() {
                         data-aos-easing="linear"
                         data-aos-mirror="true"
                         data-aos-once="false"
-                        data-aos-anchor-placement="top-bottom"> <ItemAbout active><ItemTitleAbout> Мы Вас консультируем и если Вас все устраивает — заключаем договор
+                        data-aos-anchor-placement="top-bottom"> <Item active><ItemTitleAbout> Мы Вас консультируем и если Вас все устраивает — заключаем договор
 
-                        </ItemTitleAbout ><i className="ri-draft-line" style={itemIcon}></i></ItemAbout></ItemAos>
+                        </ItemTitleAbout ><i className="ri-draft-line" style={itemIcon}></i></Item></ItemAos>
                     {/*                     <ItemAboutHidden></ItemAboutHidden>
                     <ItemAboutHidden></ItemAboutHidden> */}
 
@@ -99,7 +95,7 @@ function HowWork() {
                         data-aos-easing="linear"
                         data-aos-mirror="true"
                         data-aos-once="false"
-                        data-aos-anchor-placement="top-bottom">  <ItemAbout><ItemTitleAbout>Мы доставляем все материалы на место (бесплатно) и начинаем работу</ItemTitleAbout><i className='ri-truck-line ItemIcon' style={itemIcon}></i></ItemAbout></ItemAos>
+                        data-aos-anchor-placement="top-bottom">  <Item><ItemTitleAbout>Мы доставляем все материалы на место (бесплатно) и начинаем работу</ItemTitleAbout><i className='ri-truck-line ItemIcon' style={itemIcon}></i></Item></ItemAos>
                     {/*                     <ItemAboutArrow><ArrowObject src={svgObg}></ArrowObject></ItemAboutArrow>
  */}                   <ItemAos data-aos="fade-right"
                         data-aos-offset="-150"
@@ -108,7 +104,7 @@ function HowWork() {
                         data-aos-easing="linear"
                         data-aos-mirror="true"
                         data-aos-once="false"
-                        data-aos-anchor-placement="top-bottom">   <ItemAbout><ItemTitleAbout>Вы принимаете нашу работу, оплачиваете остаток</ItemTitleAbout><i className='ri-thumb-up-line ItemIcon' style={itemIcon}></i></ItemAbout>
+                        data-aos-anchor-placement="top-bottom">   <Item><ItemTitleAbout>Вы принимаете нашу работу, оплачиваете остаток</ItemTitleAbout><i className='ri-thumb-up-line ItemIcon' style={itemIcon}></i></Item>
                     </ItemAos>
 
                 </ContentHow>
