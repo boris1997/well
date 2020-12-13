@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from '../icons/react-fontawesome'
  */import { faVk } from '../icons/free-brands-svg-icons'
 import { faWhatsapp } from '../icons/free-brands-svg-icons'
 import { faInstagram } from '../icons/free-brands-svg-icons'
-import { get } from 'react-scroll/modules/mixins/scroller'
 /* library.add(fab, faCheckSquare) */
 
 
@@ -22,14 +21,27 @@ function Footer() {
         display: flex;
 
         box-shadow: 1px 1px 1px #FFFFFF20, -2px -2px 4px rgba(0, 0, 0, 0.9);
+         @media screen and (max-width: 500px) { 
+height: 3rem;  
+}
     `
   const FooterContent = styled.div`
-
+ height: 100%;
+ display: flex;
+ align-items: center;
+ padding-right: 1rem;
+padding-left: 1rem;
     `
   const Icons = styled.div`
 
     `
   const Logo = styled.div`
+
+    `
+  const Number = styled.div`
+
+    `
+  const Mail = styled.div`
 
     `
   const A = styled.a`
@@ -51,6 +63,10 @@ function Footer() {
             <A> <FontAwesomeIcon className='checkoutProduct__icon' icon={faWhatsapp} /></A>
             <A> <FontAwesomeIcon className='checkoutProduct__icon' icon={faInstagram} /></A>
           </Icons>
+          <Number>
+
+          </Number>
+          <Mail></Mail>
         </FooterContent>
         {/*   <i class="social-medias__item-obj ri-whatsapp-line"></i>
         <i class="social-medias__item-obj icon-vk"></i>

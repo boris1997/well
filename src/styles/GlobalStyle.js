@@ -44,23 +44,46 @@ max-width: 1300px;
 `
 export const Info = styled.h2`
    font-size: 1.2rem;
+   padding-right: 0.5rem;
+          @media screen and (max-width: 950px) { 
+    font-size: 1rem;
+}
+ @media screen and (max-width: 500px) { 
+ font-size: 0.8rem !important;
+  }
 `
 export const MainTitleSection = styled.h1`
    font-size: 2rem;
    /* color: #0C6DB2; */
    color: #ffffff;
    position: relative;
+   padding-left: 1rem;
+  padding-right: 1rem;
    &::before {
       content: "";
      background-color: #ffffff30;
       position: absolute;
       left: 0;
-      right: 0;
+      right: 0; 
+      margin: auto;
+      padding-left: 1rem;
+     /* margin-right: 3rem; */
       bottom: -0.5rem;
       display: block;
-      width: 100%;
+      width: calc(100% - 3rem);
       height: .5px;
+     /*  @media screen and (max-width: 1300px) { 
+       width: 97vw;
+   } */
     }
+    @media screen and (max-width: 550px) { 
+         font-size: 1.5rem;
+    
+}
+    @media screen and (max-width: 350px) { 
+         font-size: 1.2rem;
+    
+}
 
 `
 
@@ -72,12 +95,19 @@ export const ServiceItemTitle = styled.h2`
     width: 90%;
     justify-content: center;
 
-   @media screen and (max-width: 600px) { 
+   @media screen and (max-width: 500px) { 
      font-size: 0.8rem;
    }
         `
 
-export const Content = styled.div`
+export const Content = styled.section`
+        margin-top: 8rem;
+           @media screen and (max-width: 760px) { 
+     margin-top: 5rem;
+}
+        `
+
+export const ContentGrid = styled.div`
     height: 100%;
         display: grid;
        /*  grid-template-columns: repeat(auto-fit, minmax(220px, 420px)); */
@@ -89,11 +119,14 @@ export const Content = styled.div`
        @media screen and (max-width: 1024px) { 
     grid-template-columns: repeat(2, 1fr);
 }
-       @media screen and (max-width: 600px) { 
-    padding-left: 2rem;
-    padding-right: 2rem;
+       @media screen and (max-width: 800px) { 
+     grid-row-gap: 3.5rem !important;
+}
+       @media screen and (max-width: 500px) { 
+    padding-left: 1rem;
+    padding-right: 1rem;
     grid-column-gap: 2.5rem;
-    grid-row-gap: 2.5rem;
+    grid-row-gap: 2.5rem !important;
    
 }
     
@@ -104,6 +137,10 @@ grid-row-gap: 7.5rem;
 
 export const ItemAos = styled.div` 
 justify-self: center;
+@media screen and (max-width: 500px) { 
+ width: 100%;
+ height: calc(55vw - 1.5rem)
+}
 `
 
 export const Item = styled.div`
@@ -131,7 +168,7 @@ export const Item = styled.div`
 //            height: 30%;
 // }
 //   
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 500px) { 
   //  height: auto;
   //    width: auto;
          width: 100%;
@@ -141,9 +178,32 @@ export const Item = styled.div`
      border-radius: 20px;
 } 
 
+@media screen and (max-width: 500px) { 
 
+   /*  height: 15rem; */
+    
+}
+ @media screen and (max-width: 400px) { 
+
+  /*   height: 11rem; */
+    
+}
+@media screen and (max-width: 500px) { 
+      
+        i {
+            font-size: 4rem !important;
+        }
+    }
+  @media screen and (max-width: 490px) { 
  
+    i {
+            font-size: 3rem !important;
+        }
+    }
         `
+
+
+console.log(Item)
 export const ItemTitle = styled.h2`
       order: 2;
       margin-top: 2rem;
@@ -151,7 +211,7 @@ export const ItemTitle = styled.h2`
       font-size: 1rem;
       width: 90%;
       justify-content: center;
-         @media screen and (max-width: 600px) { 
+         @media screen and (max-width: 550px) { 
      font-size: 0.8rem;
    }
     @media screen and (max-width: 400px) { 
@@ -163,7 +223,7 @@ export const ItemTitle = styled.h2`
 export const ItemImg = styled.img`
        height: 7rem;
            object-fit: contain;
-@media screen and (max-width: 600px) { 
+@media screen and (max-width: 550px) { 
  height: 6rem;
 
 } 

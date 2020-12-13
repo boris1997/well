@@ -1,15 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Content, Item, ItemImg, ItemTitle, MainTitleSection } from '../styles/GlobalStyle'
+import { Container, Content, ContentGrid, Item, ItemAos, ItemImg, ItemTitle, MainTitleSection } from '../styles/GlobalStyle'
 import 'remixicon/fonts/remixicon.css'
 import { ItemAosFourth, ItemAosThird } from './Services'
 function AboutUs() {
 
-    const AboutUs = styled.section`
-        margin-top: 8rem
-        `
 
-    const ContentAbout = styled(Content)`
+
+    const ContentAbout = styled(ContentGrid)`
 
 grid-template-rows: repeat(2, 1fr);
 grid-row-gap: 5.3rem;
@@ -40,18 +38,13 @@ grid-row-gap: 5.3rem;
         /* box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20; */
         box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20;
     } 
-            @media screen and (max-width: 600px) { 
-       width: 14rem;
-        height: 14rem;
-    }
+       padding-top: 0;
+    padding-bottom: 0;
             @media screen and (max-width: 550px) { 
-       width: 12rem;
-        height: 12rem;
+     width: 100%;
+    height: 100%;
     }
-    @media screen and (max-width: 490px) { 
-       width: 10rem;
-        height: 10rem;
-   
+           
     }
  
     `
@@ -70,22 +63,30 @@ grid-row-gap: 5.3rem;
               box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9),  -1px -1px 2px #FFFFFF20;
 
      }
-           @media screen and (max-width: 600px) { 
-   width: 12.25rem;
-    height: 12.25rem;
+      
+           @media screen and (max-width: 550px) { 
+  width: 85%;
+    height: 85%;
+    i {
+             font-size: 15wv !important;
+         }
 }
-  @media screen and (max-width: 550px) { 
-       width: 10.5rem;
-        height: 10.5rem;
+//   @media screen and (max-width: 550px) { 
+      
         i {
             font-size: 4rem !important;
         }
     }
   @media screen and (max-width: 490px) { 
-       width: 8.7rem;
-        height: 8.7rem;
+ 
     i {
             font-size: 3rem !important;
+        }
+    }
+  @media screen and (max-width: 360px) { 
+ 
+    i {
+            font-size: 2.5rem !important;
         }
     }
  
@@ -95,25 +96,24 @@ grid-row-gap: 5.3rem;
 
     }
 
-    const ItemAos = styled.div`
 
-    justify-self: center;
-  /*    @media screen and (max-width: 490px) { 
-     /*   width: 10rem;
-        height: 10rem; */
-   
-    } */
-    `
     const ItemAosAboutThird = styled(ItemAosThird)`
-       @media screen and (max-width: 490px) { 
-       width: auto ;
-        height: 12rem !important;
+    @media screen and (max-width: 550px) { 
+          width: calc(47vw - 1.5rem);
+    height: calc(47vw - 1.5rem);
     }
     `
     const ItemAosAboutFourth = styled(ItemAosFourth)`
-       @media screen and (max-width: 490px) { 
-       width: auto ;
-        height: 12rem !important;
+    @media screen and (max-width: 550px) { 
+        width: calc(47vw - 1.5rem);
+    height: calc(47vw - 1.5rem);
+    }
+ 
+    `
+    const ItemAosAbout = styled(ItemAos)`
+    @media screen and (max-width: 550px) { 
+        width: calc(47vw - 1.5rem);
+    height: calc(47vw - 1.5rem);
     }
     `
 
@@ -135,7 +135,7 @@ grid-row-gap: 5.3rem;
     `
 
     return (
-        <AboutUs className='about'>
+        <Content className='about'>
             <Container>
 
                 <MainTitleSection>
@@ -143,7 +143,7 @@ grid-row-gap: 5.3rem;
                 </MainTitleSection>
 
                 <ContentAbout>
-                    <ItemAos data-aos="fade-up"
+                    <ItemAosAbout data-aos="fade-up"
                         data-aos-offset="-270"
                         data-aos-delay="0"
                         data-aos-duration="700"
@@ -152,8 +152,8 @@ grid-row-gap: 5.3rem;
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
                         <ItemAbout><ItemAboutInner><ItemTitleAbout>Работаем в этой сфере более 10 лет</ItemTitleAbout><i className="ri-medal-2-line" style={itemIcon}></i></ItemAboutInner> </ItemAbout>
-                    </ItemAos>
-                    <ItemAos data-aos="fade-up"
+                    </ItemAosAbout>
+                    <ItemAosAbout data-aos="fade-up"
                         data-aos-offset="-270"
                         data-aos-delay="150"
                         data-aos-duration="700"
@@ -163,7 +163,7 @@ grid-row-gap: 5.3rem;
                         data-aos-anchor-placement="top-center">
                         <ItemAbout><ItemAboutInner><ItemTitleAbout>Лидеры в сфере услуг по обслуживанию колодцев
                         </ItemTitleAbout><i className="ri-line-chart-line" style={itemIcon}></i></ItemAboutInner></ItemAbout>
-                    </ItemAos>
+                    </ItemAosAbout>
                     <ItemAosAboutThird data-aos="fade-up"
                         data-aos-offset="-270"
                         data-aos-delay="300"
@@ -219,7 +219,7 @@ grid-row-gap: 5.3rem;
                 </ContentAbout>
 
             </Container>
-        </AboutUs >
+        </Content >
     )
 }
 

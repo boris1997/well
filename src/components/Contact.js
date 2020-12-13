@@ -1,12 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, MainTitleSection } from '../styles/GlobalStyle'
+import { Container, Content, MainTitleSection } from '../styles/GlobalStyle'
 
 function Contact() {
-    const Feedback = styled.section`
-  margin-top: 12rem;
 
-  `
     const NavContainer = styled(Container)`
 max-width: 1350px
     `
@@ -18,6 +15,15 @@ max-width: 1350px
         /* align-items: center; */
          @media screen and (max-width: 1280px) { 
       height: 34.5rem;
+}
+         @media screen and (max-width: 550px) { 
+      height: 30rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    @media screen and (max-width: 350px) { 
+        height: 26rem;
+    
 }
 `
 const FeedbackContentInner = styled.div`
@@ -37,12 +43,28 @@ margin-bottom: 2rem;
         width: 29rem;
 
 }
+ @media screen and (max-width: 550px) { 
+      padding-left: 2.5rem;
+padding-right: 2.5rem;
+}
+
+
+        
 `
     const FeedbackContentTitle = styled.h1`
    font-size: 1.4rem;
    text-align: center;
    @media screen and (max-width: 1280px) { 
           font-size: 1.2rem;
+}
+
+ @media screen and (max-width: 550px) { 
+   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 350px) { 
+    font-size: 0.8rem;
+    
 }
     `
     const FeedbackContentItem = styled.div`
@@ -61,7 +83,14 @@ margin-bottom: 2rem;
    flex-direction: column;
    align-items: center;
        margin-top: 3rem;
-
+       @media screen and (max-width: 550px) { 
+        margin-top: 2.5rem;
+    }
+    @media screen and (max-width: 350px) { 
+        margin-top: 1.8rem;
+    
+    
+}
     `
     const FeedbackName = styled.div`
    display: flex;
@@ -69,6 +98,13 @@ margin-bottom: 2rem;
    flex-direction: column;
     @media screen and (max-width: 1280px) { 
           font-size: 1rem;
+}
+ @media screen and (max-width: 550px) { 
+   font-size: 0.8rem;
+}
+@media screen and (max-width: 350px) { 
+    font-size: 0.6rem;
+    
 }
     `
 
@@ -91,6 +127,13 @@ padding-left: 1rem;
    }
     @media screen and (max-width: 1280px) { 
             height: 2.2rem;
+}
+ @media screen and (max-width: 550px) { 
+   height: 1.7rem;
+}
+@media screen and (max-width: 350px) { 
+    height: 1.4rem;
+    
 }
 
     `
@@ -115,10 +158,18 @@ padding-left: 1rem;
         @media screen and (max-width: 1280px) { 
           font-size: 1rem;
 }
+@media screen and (max-width: 550px) { 
+        font-size: 0.8rem;
+    
+}
+ @media screen and (max-width: 350px) { 
+        font-size: 0.6rem;
+    
+}
     `
 
     return (
-        <Feedback className='contact'>
+        <Content className='contact'>
             <Container>
                 <MainTitleSection>
                     Обратная связь
@@ -173,7 +224,7 @@ padding-left: 1rem;
 
 
             </Container>
-        </Feedback>
+        </Content>
     )
 }
 

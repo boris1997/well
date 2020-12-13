@@ -1,36 +1,35 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { Container, Content, Item, ItemImg, ItemTitle, MainTitleSection } from '../styles/GlobalStyle'
+import { Container, Content, ContentGrid, Item, ItemAos, ItemImg, ItemTitle, MainTitleSection } from '../styles/GlobalStyle'
 import svgObg from '../svg/right-arrow (2).svg'
 import 'remixicon/fonts/remixicon.css'
 function HowWork() {
 
     /* const [active, setActive] = useState() */
 
-    const HowWork = styled.section`
-        margin-top: 12rem
-        `
+
     const ArrowObject = styled.img`
     
         width: 100px;
         `
 
 
-    const ContentHow = styled(Content)`
+    const ContentHow = styled(ContentGrid)`
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(1,1fr);
-    grid-row-gap: 0.5rem;
+  
     @media screen and (max-width: 1024px) { 
     grid-template-columns: repeat(2, 1fr);
      grid-row-gap:5.5rem;
 }
+    @media screen and (max-width: 500px) { 
+     grid-row-gap:2.5rem;
+}
     `
-    const ItemAos = styled.div`
 
-    justify-self: center;`
-/*     const ItemAboutArrow = styled(ItemAbout)`
-  box-shadow: none;
-    ` */
+    /*     const ItemAboutArrow = styled(ItemAbout)`
+      box-shadow: none;
+        ` */
 
 
 
@@ -55,7 +54,7 @@ function HowWork() {
     `
 
     return (
-        <HowWork className='work'>
+        <Content className='work'>
             <Container>
 
                 <MainTitleSection>
@@ -110,7 +109,7 @@ function HowWork() {
                 </ContentHow>
 
             </Container>
-        </HowWork>
+        </Content>
     )
 }
 

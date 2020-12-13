@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { Container, Content, Item, ItemImg, ItemTitle, MainTitleSection, ServiceItemTitle } from '../styles/GlobalStyle'
+import { Container, Content, ContentGrid, Item, ItemAos, ItemImg, ItemTitle, MainTitleSection, ServiceItemTitle } from '../styles/GlobalStyle'
 import dig from '../images/копка.png'
 import water from '../images/водоснабжение.png'
 import dezinfection from '../images/дезинфекция.png'
@@ -13,32 +13,7 @@ import cleaning from '../images/чистка.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const ItemAos = styled.div`
-/* height: 18rem; */
-/* width: 14rem; */
 
-justify-self: center;
-//   
- @media screen and (max-width: 600px) { 
-//   width: auto;
-//   height:  auto;
-/*    width: 100%;
-    height: 100%; */
-// } 
-
-@media screen and (max-width: 500px) { 
- 
-    height: 14rem;
-    
-}
-
-@media screen and (max-width: 400px) { 
-
-    height: 11rem;
-
-} 
-
-`
 
 export const ItemAosThird = styled(ItemAos)`
 justify-self: center;
@@ -52,8 +27,8 @@ justify-self: center;
     height: 100%; */
 // } 
 @media screen and (max-width: 500px) { 
- height:  auto;
-    height: 14rem;
+/*  height:  auto;
+    height: 14rem; */
     
 }
 
@@ -65,7 +40,7 @@ justify-self: center;
 }
 @media screen and (max-width: 500px) { 
  
-    height: 14rem;
+  /*   height: 14rem; */
     
 }
 
@@ -73,12 +48,7 @@ justify-self: center;
 function Services() {
     AOS.init();
 
-    const Services = styled.section`
-        display: flex;
-        justify-content: space-between;
-        margin-top: 12rem;
 
-        `
 
     //     const ItemAosThird = styled(ItemAos)`
 
@@ -133,12 +103,12 @@ function Services() {
             console.log(result)
         } */
     return (
-        <Services className='services'>
+        <Content className='services'>
             <Container>
                 <MainTitleSection>
                     Услуги
                 </MainTitleSection>
-                <Content>
+                <ContentGrid>
 
                     <ItemAos data-aos="fade-up"
                         data-aos-offset="-270"
@@ -244,9 +214,9 @@ function Services() {
                         data-aos-anchor-placement="top-center">
                         <Item ><ItemTitle>Септики под ключ от 4500 рублей</ItemTitle><ItemImg src={septics}></ItemImg></Item>
                     </ItemAosThird>
-                </Content>
+                </ContentGrid>
             </Container>
-        </Services>
+        </Content>
     )
 }
 

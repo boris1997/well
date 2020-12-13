@@ -2,22 +2,22 @@ import './App.css';
 import { GlobalStyles } from '../src/styles/GlobalStyle';
 import Header from './components/Header';
 import Services from './components/Services';
-import Navbar from './components/Navbar';
+import Navbar from './components/navbar/Navbar';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import HowWork from './components/HowWork';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import MobileMenu from './components/MobileMenu';
+/* import MobileMenu from './components/MobileMenu'; */
 import { BrowserRouter as Router } from 'react-router-dom';
- // You can also use <link> for styles
+// You can also use <link> for styles
 /* import Header from '../src/Header';
  */
 
 
 
 const App = () => {
-  
+
 
   /*   display: grid;
     grid - template - columns: repeat(3, 1fr);
@@ -28,7 +28,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <MobileMenu />
+{/*       <MobileMenu /> */}
       <Home />
       <Services />
       <AboutUs />
