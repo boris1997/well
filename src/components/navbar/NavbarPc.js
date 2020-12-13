@@ -44,9 +44,10 @@ border-radius: 40px;
            background-color: #0C6DB2;
            background-color: #ffffff;
            width:100%;
-           height: .1px;
+           height: .5px;
            bottom: -3px;
            left:0;
+           opacity: 0.7;
            border-radius:.1em;
            transform:scaleX(0);
            transition:transform .3s ease;
@@ -56,10 +57,7 @@ border-radius: 40px;
         &:visited {
             color: green;
         }
-         /* &:active::after   {
-             transform:scaleX(1);
-             transform-origin:left;
-               } */
+         
 
                &:hover::after, &:active::after   {
              transform:scaleX(1);

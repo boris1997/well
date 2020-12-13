@@ -99,21 +99,21 @@ grid-row-gap: 5.3rem;
 
     const ItemAosAboutThird = styled(ItemAosThird)`
     @media screen and (max-width: 550px) { 
-          width: calc(47vw - 1.5rem);
-    height: calc(47vw - 1.5rem);
+          width: calc(48vw - 1.5rem);
+    height: calc(48vw - 1.5rem);
     }
     `
     const ItemAosAboutFourth = styled(ItemAosFourth)`
     @media screen and (max-width: 550px) { 
-        width: calc(47vw - 1.5rem);
-    height: calc(47vw - 1.5rem);
+        width: calc(48vw - 1.5rem);
+    height: calc(48vw - 1.5rem);
     }
  
     `
     const ItemAosAbout = styled(ItemAos)`
     @media screen and (max-width: 550px) { 
-        width: calc(47vw - 1.5rem);
-    height: calc(47vw - 1.5rem);
+        width: calc(48vw - 1.5rem);
+    height: calc(48vw - 1.5rem);
     }
     `
 
@@ -124,13 +124,10 @@ grid-row-gap: 5.3rem;
     width: 60%;
     text-align: center;
      @media screen and (max-width: 550px) { 
- font-size: 0.6rem;
+
         margin-top: 1rem;
     }
-     @media screen and (max-width: 490px) { 
- font-size: 0.5rem;
-       
-    }
+    
 
     `
 
