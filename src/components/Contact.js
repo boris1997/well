@@ -189,7 +189,7 @@ padding-left: 1rem;
                                 <FeedbackName>
                                     фамилия
                            </FeedbackName>
-                                <FeedbackInput type="text" name="sername" required className="feedback__form-control" id="name" placeholder=""></FeedbackInput>
+                                <FeedbackInput type="text" name="sername" required className="feedback__form-control" id="sername" placeholder=""></FeedbackInput>
                                 {/* <FeedbackInvalid>
                     Имя не должно содержать цифр
                 </FeedbackInvalid> */}

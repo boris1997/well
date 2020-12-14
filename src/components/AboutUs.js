@@ -71,30 +71,14 @@ grid-row-gap: 5.3rem;
              font-size: 15wv !important;
          }
 }
-//   @media screen and (max-width: 550px) { 
-      
-        i {
-            font-size: 4rem !important;
-        }
-    }
+
   @media screen and (max-width: 490px) { 
- 
-    i {
-            font-size: 3rem !important;
-        }
-    }
-  @media screen and (max-width: 360px) { 
- 
-    i {
-            font-size: 2.5rem !important;
-        }
-    }
+  width: 100%;
+    height: 100%;
+
+
  
     `
-    const itemIcon = {
-        fontSize: '5rem'
-
-    }
 
 
     const ItemAosAboutThird = styled(ItemAosThird)`
@@ -148,7 +132,7 @@ grid-row-gap: 5.3rem;
                         data-aos-mirror="true"
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
-                        <ItemAbout><ItemAboutInner><ItemTitleAbout>Работаем в этой сфере более 10 лет</ItemTitleAbout><i className="ri-medal-2-line" style={itemIcon}></i></ItemAboutInner> </ItemAbout>
+                        <ItemAbout><ItemAboutInner><ItemTitleAbout>Работаем в этой сфере более 10 лет</ItemTitleAbout><i className="ri-medal-2-line" ></i></ItemAboutInner> </ItemAbout>
                     </ItemAosAbout>
                     <ItemAosAbout data-aos="fade-up"
                         data-aos-offset="-270"
@@ -159,7 +143,7 @@ grid-row-gap: 5.3rem;
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
                         <ItemAbout><ItemAboutInner><ItemTitleAbout>Лидеры в сфере услуг по обслуживанию колодцев
-                        </ItemTitleAbout><i className="ri-line-chart-line" style={itemIcon}></i></ItemAboutInner></ItemAbout>
+                        </ItemTitleAbout><i className="ri-line-chart-line" ></i></ItemAboutInner></ItemAbout>
                     </ItemAosAbout>
                     <ItemAosAboutThird data-aos="fade-up"
                         data-aos-offset="-270"
@@ -172,7 +156,7 @@ grid-row-gap: 5.3rem;
                         <ItemAbout> <ItemAboutInner>
                             <ItemTitleAbout>Работаем по договору, даем гарантии
 
-                        </ItemTitleAbout><i className="ri-draft-line" style={itemIcon}></i></ItemAboutInner></ItemAbout>
+                        </ItemTitleAbout><i className="ri-draft-line" ></i></ItemAboutInner></ItemAbout>
                     </ItemAosAboutThird>
                     <ItemAosAboutFourth data-aos="fade-up"
                         data-aos-offset="-270"
@@ -185,7 +169,7 @@ grid-row-gap: 5.3rem;
                         <ItemAbout>
                             <ItemAboutInner>
                                 <ItemTitleAbout>Максимальный результат, за короткое время
-                        </ItemTitleAbout><i className="ri-time-line " style={itemIcon}></i>
+                        </ItemTitleAbout><i className="ri-time-line " ></i>
                             </ItemAboutInner></ItemAbout>
                     </ItemAosAboutFourth>
                     <ItemAosAboutThird data-aos="fade-up"
@@ -198,7 +182,7 @@ grid-row-gap: 5.3rem;
                         data-aos-anchor-placement="top-center">
                         <ItemAbout>
                             <ItemAboutInner>
-                                <ItemTitleAbout>Cовременные технические средства</ItemTitleAbout><i className="ri-flask-line " style={itemIcon}></i>
+                                <ItemTitleAbout>Cовременные технические средства</ItemTitleAbout><i className="ri-flask-line "></i>
                             </ItemAboutInner></ItemAbout></ItemAosAboutThird>
                     <ItemAosAboutFourth data-aos="fade-up"
                         data-aos-offset="-270"
@@ -209,7 +193,7 @@ grid-row-gap: 5.3rem;
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center"><ItemAbout>
                             <ItemAboutInner>
-                                <ItemTitleAbout>Всегда на связи, готовы принять заказ</ItemTitleAbout><i className='ri-customer-service-line ItemIcon' style={itemIcon}></i>
+                                <ItemTitleAbout>Всегда на связи, готовы принять заказ</ItemTitleAbout><i className='ri-customer-service-line ItemIcon'></i>
                             </ItemAboutInner></ItemAbout></ItemAosAboutFourth>
 
 

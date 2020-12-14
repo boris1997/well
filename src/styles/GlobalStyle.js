@@ -163,6 +163,9 @@ export const Item = styled.div`
          /* box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15), -3px -3px 6px rgba(255, 255, 255, 0.85); */
          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), -1px -1px 2px #FFFFFF20;
      }
+       i {
+            font-size: 5rem !important;
+        }
 //      @media screen and (max-width: 1280px) { 
 //            width: 50%;
 //            height: 30%;
@@ -173,22 +176,13 @@ export const Item = styled.div`
   //    width: auto;
          width: 100%;
     height: 100%;
-         padding-top: 3rem;
-    padding-bottom: 3rem;
+         padding-top: 1rem;
+    padding-bottom: 1rem;
      border-radius: 20px;
 } 
 
-@media screen and (max-width: 500px) { 
 
-   /*  height: 15rem; */
-    
-}
- @media screen and (max-width: 400px) { 
-
-  /*   height: 11rem; */
-    
-}
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 550px) { 
       
         i {
             font-size: 4rem !important;
@@ -200,6 +194,12 @@ export const Item = styled.div`
             font-size: 3rem !important;
         }
     }
+      @media screen and (max-width: 360px) { 
+ 
+    i {
+            font-size: 2.5rem !important;
+        }
+    }
         `
 
 
@@ -209,18 +209,20 @@ export const ItemTitle = styled.h2`
       margin-top: 2rem;
       align-self:center;
       font-size: 1rem;
+       text-align: center;
       width: 90%;
       justify-content: center;
          @media screen and (max-width: 550px) { 
      font-size: 0.8rem;
    }
     @media screen and (max-width: 400px) { 
-     font-size: 0.6rem;
-     text-align: center;
+     font-size: 0.75rem;
    }
-    @media screen and (max-width: 320px) { 
-     font-size: 0.5rem;
-     text-align: center;
+    @media screen and (max-width: 370px) { 
+     font-size: 0.7rem;
+   }
+    @media screen and (max-width: 330px) { 
+     font-size: 0.62rem;
    }
       `
 

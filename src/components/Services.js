@@ -119,7 +119,7 @@ function Services() {
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
                         <Item
-                        ><ItemTitle>Копка колодцев от 4500 рублей</ItemTitle><ItemImg src={dig}></ItemImg></Item>
+                        ><ItemTitle>Копка колодцев от 4500 рублей</ItemTitle><ItemImg src={dig} alt='Копка колодцев'></ItemImg></Item>
                     </ItemAos>
                     <ItemAos data-aos="fade-up"
                         data-aos-offset="-270"
@@ -132,8 +132,8 @@ function Services() {
 
                         <Item
                         ><ItemTitle>установка дачных туалетов
-                        от 4500 рублей
-                    </ItemTitle><ItemImg src={water}></ItemImg></Item>
+                            от 4500 рублей
+                    </ItemTitle><ItemImg src={water} alt='установка дачных туалетов'></ItemImg></Item>
                     </ItemAos>
                     <ItemAosThird data-aos="fade-up"
                         data-aos-offset="-270"
@@ -147,7 +147,7 @@ function Services() {
                         <Item ><ItemTitle>Водоснабжение
                         от 4500 рублей
 
-                    </ItemTitle><ItemImg src={dezinfection}></ItemImg></Item>
+                    </ItemTitle><ItemImg src={dezinfection} alt='Водоснабжение'></ItemImg></Item>
                     </ItemAosThird>
                     <ItemAosFourth data-aos="fade-up"
                         data-aos-offset="-270"
@@ -160,7 +160,7 @@ function Services() {
                         <Item><ItemTitle>Диагностика колодцев
                         от 4500 рублей
 
-                    </ItemTitle><ItemImg src={diagnostic}></ItemImg></Item>
+                    </ItemTitle><ItemImg src={diagnostic} alt='Диагностика колодцев'></ItemImg></Item>
                     </ItemAosFourth>
                     <ItemAosThird data-aos="fade-up"
                         data-aos-offset="-270"
@@ -171,7 +171,7 @@ function Services() {
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
                         <Item><ItemTitle>Ремонт колодцев от 5000 рублей
-                    </ItemTitle><ItemImg src={repair}></ItemImg></Item>
+                    </ItemTitle><ItemImg src={repair} alt='Ремонт колодцев'></ItemImg></Item>
                     </ItemAosThird>
                     <ItemAosFourth data-aos="fade-up"
                         data-aos-offset="-270"
@@ -181,7 +181,7 @@ function Services() {
                         data-aos-mirror="true"
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
-                        <Item><ItemTitle>Траншеи от 800 рублей за погонный метр</ItemTitle><ItemImg src={trenches}></ItemImg></Item>
+                        <Item><ItemTitle>Траншеи от 800 рублей за погонный метр</ItemTitle><ItemImg src={trenches} alt='Траншеи'></ItemImg></Item>
                     </ItemAosFourth>
                     <ItemAos data-aos="fade-up"
                         data-aos-offset="-270"
@@ -191,7 +191,7 @@ function Services() {
                         data-aos-mirror="true"
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
-                        <Item><ItemTitle>Домики на колодца (монтаж и демонтаж) </ItemTitle><ItemImg src={toilets}></ItemImg></Item>
+                        <Item><ItemTitle>Домики на колодца (монтаж и демонтаж) </ItemTitle><ItemImg src={toilets} alt='Домики на колодца'></ItemImg></Item>
                     </ItemAos>
                     <ItemAos data-aos="fade-up"
                         data-aos-offset="-270"
@@ -202,7 +202,7 @@ function Services() {
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
                         <Item><ItemTitle>Чистка колодцев от 5000 рублей
-                    </ItemTitle><ItemImg src={cleaning}></ItemImg></Item>
+                    </ItemTitle><ItemImg src={cleaning} alt='Чистка колодцев'></ItemImg></Item>
                     </ItemAos>
                     <ItemAosThird data-aos="fade-up"
                         data-aos-offset="-270"
@@ -212,7 +212,7 @@ function Services() {
                         data-aos-mirror="true"
                         data-aos-once="false"
                         data-aos-anchor-placement="top-center">
-                        <Item ><ItemTitle>Септики под ключ от 4500 рублей</ItemTitle><ItemImg src={septics}></ItemImg></Item>
+                        <Item ><ItemTitle>Септики под ключ от 4500 рублей</ItemTitle><ItemImg src={septics} alt='Септики под ключ'></ItemImg></Item>
                     </ItemAosThird>
                 </ContentGrid>
             </Container>

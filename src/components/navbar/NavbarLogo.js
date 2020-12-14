@@ -32,7 +32,7 @@ const Label = styled(Link)`
 function NavbarLogo() {
     return (
         <NavbarLogoContent>
-            <Logo src={LogoImg}></Logo>
+            <Logo src={LogoImg} alt='siteLogo'></Logo>
             <Label to='/'>RusКолодец</Label>
         </NavbarLogoContent>
     )
