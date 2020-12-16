@@ -47,22 +47,13 @@ height: 2.5px;
 }
 
 `
-function Humburger({ status, setStatus }) {
+const Humburger = ({ status, setStatus }) => {
 
-
-    /* console.log(props.onClick) */
-
-
-    /*    console.log([active, setActive])
-       console.log(setActive) */
-    /*  const setStatus = () => {
-         setActive('active')
-         console.log(active)
-     } */
     const showMobileMenu = () => {
         console.log(status)
         setStatus('active')
     }
+    
     return (
         <HumburgerContent onClick={showMobileMenu}>
             <HumburgerContentLine ></HumburgerContentLine>

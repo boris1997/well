@@ -1,26 +1,11 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import Humburger from './Humburger'
-import MobileMenuContentInner from './MobileMenuContentInner'
+import NavbarSidebar from './NavbarSidebar'
 import NavbarLogo from './NavbarLogo'
 
 
-
-
-
-
-
-
-/*     const setStatus = () => {
-    console.log('ok')
-    console.log('ok')
-} */
-
-/*  const setActive =()=> {
-    console.log('ok')
-} */
-
-const MobileMenuContent = styled.div` 
+const NavbarMobileContent = styled.div` 
 display: none;
 @media screen and (max-width: 760px) {
 
@@ -39,18 +24,15 @@ padding-left: 1rem;
 `
 function NavbarMobile() {
     const [status, setStatus] = useState('')
-
+    console.log(useState())
     /* const removeMobileMenu = () => setStatus('') */
     return (
 
-        <MobileMenuContent  >
+        <NavbarMobileContent  >
             <NavbarLogo />
             <Humburger status={status} setStatus={setStatus} />
-
-            {/*    <MobileMenuTransparent onClick={removeMobileMenu}></MobileMenuTransparent> */}
-            <MobileMenuContentInner status={status} setStatus={setStatus} />
-
-        </MobileMenuContent>
+            <NavbarSidebar status={status} setStatus={setStatus} />
+        </NavbarMobileContent>
 
     )
 }

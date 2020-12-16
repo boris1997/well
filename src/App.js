@@ -1,6 +1,5 @@
 import './App.css';
 import { GlobalStyles } from '../src/styles/GlobalStyle';
-import Header from './components/Header';
 import Services from './components/Services';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/Home';

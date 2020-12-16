@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Container, Content, ContentGrid, Item, ItemAos, ItemImg, ItemTitle, MainTitleSection, ServiceItemTitle } from '../styles/GlobalStyle'
 import dig from '../images/копка.png'
@@ -45,63 +45,10 @@ justify-self: center;
 }
 
  `
-function Services() {
+const Services = () => {
     AOS.init();
 
 
-
-    //     const ItemAosThird = styled(ItemAos)`
-
-    //     @media screen and (max-width: 1028px) {
-    //         width:14px;
-    //         transition-delay: 0 !important;
-    //         [data-aos][data-aos][data-aos-delay="0"].aos-animate, body[data-aos-delay="0"] [data-aos].aos-animate  {
-    //   }
-    // }
-    //     `
-    //     const ItemAosfourth = styled(ItemAos)`
-
-    //     @media screen and (max-width: 1028px) {
-
-    //         [data-aos][data-aos][data-aos-delay="300"].aos-animate, body[data-aos-delay="300"] [data-aos].aos-animate  {
-    //            transition-delay: 0.15s !important;
-    //   }
-    // }
-    //     `
-    //     const Aosholder = styled.div` 
-    //     @media screen and (max-width: 1028px) {
-    //         width: 5px
-    //         [data-aos][data-aos][data-aos-delay="300"].aos-animate {
-    //             transition-delay: 0 !important;
-    //   }
-    //     `
-
-
-
-    /*   const ServiceItemTitle = styled.h2`
-      order: 2;
-      margin-top: 2rem;
-      align-self:center;
-      font-size: 1rem;
-      width: 90%;
-      justify-content: center;
-          ` */
-    /*     const hover = () => {
-    
-        }
-     */
-
-
-
-    /*     function setDelay() {
-            console.log(window.innerWidth)
-            let result;
-            window.addEventListener('resize', () => {
-                window.innerWidth > 1028 ? result = 300 : result = 0;
-            })
-            return result
-            console.log(result)
-        } */
     return (
         <Content className='services'>
             <Container>

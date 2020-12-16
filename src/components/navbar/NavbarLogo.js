@@ -5,14 +5,17 @@ import LogoImg from '../../svg/water-well.svg'
 
 const NavbarLogoContent = styled.div`
     flex: 1;
-   display: flex;
-     align-items: center;
-  /*  justify-content: space-between;
-   align-items: center; */
-   border-radius: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
    `
-   
-   const Logo = styled.img`
+const LogoLink = styled(Link)`
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+ `
+
+const Logo = styled.img`
    height: 3rem;
    @media screen and (max-width: 500px) { 
  height: 2rem;
@@ -20,7 +23,7 @@ const NavbarLogoContent = styled.div`
 
         `
 
-const Label = styled(Link)`
+const Label = styled.title`
         display: flex;
         justify-content: space-between;
         font-size: 2rem;
@@ -29,11 +32,21 @@ const Label = styled(Link)`
               font-size: 1.5rem;
   }
         `
-function NavbarLogo() {
+const NavbarLogo = () => {
     return (
         <NavbarLogoContent>
-            <Logo src={LogoImg} alt='siteLogo'></Logo>
-            <Label to='/'>RusКолодец</Label>
+            <LogoLink
+                to='home'
+                activeClass="active"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-200} >
+
+                <Logo src={LogoImg} alt='siteLogo'></Logo>
+                <Label>RusКолодец</Label>
+            </LogoLink>
         </NavbarLogoContent>
     )
 }

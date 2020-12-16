@@ -6,7 +6,9 @@ import { FontAwesomeIcon } from '../../icons/react-fontawesome'
  */import { faTimesCircle } from '../../icons/free-regular-svg-icons'
 import { Link } from 'react-scroll'
 // transform: ${ status === 'active' ? 'translate(0)' : 'translateX(-100%)' };
-const MobileMenuContentItems = styled.div` 
+
+
+const NavbarSidebarContent = styled.div` 
 transition: transform 0.5s linear;
 box-shadow:  -2px -2px 4px rgba(0, 0, 0, 0.9), 1px 1px 2px #FFFFFF20;
 top: 0;
@@ -23,7 +25,7 @@ opacity: 1;
 }
 `
 
-const Ul = styled.ul` 
+const Ul = styled.div` 
 display: flex;
 height:/*  calc() */ 80vh;
 margin-top: 3rem;
@@ -65,16 +67,15 @@ font-size: 1.2rem;
 /* const Span = styled.span` 
 
 ` */
-function MobileMenuContentInner({ status, setStatus }) {
+const NavbarSidebar = ({ status, setStatus }) => {
     console.log(status)
-    const closeMobileMenu = () => {
-        console.log(status)
+    const closeMobileMenu = (stat) => {
         setStatus('')
-
     }
+
     return (
-        <MobileMenuContentItems status={status}>
-            <CloseBtn onClick={closeMobileMenu} icon={faTimesCircle}></CloseBtn>
+        <NavbarSidebarContent status={status}>
+            <CloseBtn onClick={closeMobileMenu.bind(this, 'Closed')} icon={faTimesCircle}></CloseBtn>
             <Ul>
 
                 <LinkItem to='home'
@@ -133,8 +134,8 @@ function MobileMenuContentInner({ status, setStatus }) {
                     onClick={closeMobileMenu}
                 >Контакты</LinkItem>
             </Ul>
-        </MobileMenuContentItems>
+        </NavbarSidebarContent>
     )
 }
 
-export default MobileMenuContentInner
+export default NavbarSidebar

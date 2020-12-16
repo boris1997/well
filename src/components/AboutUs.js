@@ -1,119 +1,117 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Container, Content, ContentGrid, Item, ItemAos, ItemImg, ItemTitle, MainTitleSection } from '../styles/GlobalStyle'
+import { Container, Content, ContentGrid, Item, ItemAos, ItemTitle, MainTitleSection } from '../styles/GlobalStyle'
 import 'remixicon/fonts/remixicon.css'
 import { ItemAosFourth, ItemAosThird } from './Services'
-function AboutUs() {
 
-
-
-    const ContentAbout = styled(ContentGrid)`
+const ContentAbout = styled(ContentGrid)`
 
 grid-template-rows: repeat(2, 1fr);
 grid-row-gap: 5.3rem;
 @media screen and (max-width: 1024px) { 
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 1.5rem;
+grid-template-columns: repeat(2, 1fr);
+grid-row-gap: 1.5rem;
 }
 
 
 
 @media screen and (max-width: 600px) { 
-    grid-template-rows: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
 }
 @media screen and (max-width: 490px) { 
-   grid-template-rows: repeat(2, 0.8fr);
+grid-template-rows: repeat(2, 0.8fr);
 }
 `
-    const ItemAbout = styled(Item)`
-    width: 16rem;
-    height: 16rem;
-    border-radius: 1000px;
+const ItemAbout = styled(Item)`
+width: 16rem;
+height: 16rem;
+border-radius: 1000px;
+box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20;
+ justify-content: center;
+ :hover{
+   /*   transform: scale(1.1); */
+   transform: scale(1);
+    /*  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0); */
+    /* box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20; */
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20;
-     justify-content: center;
-     :hover{
-       /*   transform: scale(1.1); */
-       transform: scale(1);
-        /*  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0); */
-        /* box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20; */
-        box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.9), inset -1px -1px 2px #FFFFFF20;
-    } 
-       padding-top: 0;
-    padding-bottom: 0;
-            @media screen and (max-width: 550px) { 
-     width: 100%;
-    height: 100%;
-    }
-           
-    }
- 
-    `
-    const ItemAboutInner = styled(ItemAbout)`
-    margin-top: 0;
-    width: 14rem;
-    height: 14rem;
-    margin-bottom:0;
-    /* box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.10), inset -2px -2px 4px rgba(255, 255, 255, 1); */
-         box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px #FFFFFF20;
-
-     :hover{
-        /*  transform: scale(1.1); */
-         transform: scale(1.11);
-         /* box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.8); */
-              box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9),  -1px -1px 2px #FFFFFF20;
-
-     }
-      
-           @media screen and (max-width: 550px) { 
-  width: 85%;
-    height: 85%;
-    i {
-             font-size: 15wv !important;
-         }
+} 
+   padding-top: 0;
+padding-bottom: 0;
+        @media screen and (max-width: 550px) { 
+ width: 100%;
+height: 100%;
+}
+       
 }
 
-  @media screen and (max-width: 490px) { 
-  width: 100%;
-    height: 100%;
+`
+const ItemAboutInner = styled(ItemAbout)`
+margin-top: 0;
+width: 14rem;
+height: 14rem;
+margin-bottom:0;
+/* box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.10), inset -2px -2px 4px rgba(255, 255, 255, 1); */
+     box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9), -1px -1px 2px #FFFFFF20;
+
+ :hover{
+    /*  transform: scale(1.1); */
+     transform: scale(1.11);
+     /* box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.8); */
+          box-shadow:  2px 2px 4px rgba(0, 0, 0, 0.9),  -1px -1px 2px #FFFFFF20;
+
+ }
+  
+       @media screen and (max-width: 550px) { 
+width: 85%;
+height: 85%;
+i {
+         font-size: 15wv !important;
+     }
+}
+
+@media screen and (max-width: 490px) { 
+width: 100%;
+height: 100%;
 
 
- 
-    `
+
+`
 
 
-    const ItemAosAboutThird = styled(ItemAosThird)`
-    @media screen and (max-width: 550px) { 
-          width: calc(48vw - 1.5rem);
-    height: calc(48vw - 1.5rem);
-    }
-    `
-    const ItemAosAboutFourth = styled(ItemAosFourth)`
-    @media screen and (max-width: 550px) { 
-        width: calc(48vw - 1.5rem);
-    height: calc(48vw - 1.5rem);
-    }
- 
-    `
-    const ItemAosAbout = styled(ItemAos)`
-    @media screen and (max-width: 550px) { 
-        width: calc(48vw - 1.5rem);
-    height: calc(48vw - 1.5rem);
-    }
-    `
+const ItemAosAboutThird = styled(ItemAosThird)`
+@media screen and (max-width: 550px) { 
+      width: calc(48vw - 1.5rem);
+height: calc(48vw - 1.5rem);
+}
+`
+const ItemAosAboutFourth = styled(ItemAosFourth)`
+@media screen and (max-width: 550px) { 
+    width: calc(48vw - 1.5rem);
+height: calc(48vw - 1.5rem);
+}
+
+`
+const ItemAosAbout = styled(ItemAos)`
+@media screen and (max-width: 550px) { 
+    width: calc(48vw - 1.5rem);
+height: calc(48vw - 1.5rem);
+}
+`
 
 
 
-    const ItemTitleAbout = styled(ItemTitle)`
-    border-radius: 1000px;
-    width: 60%;
-    text-align: center;
-     @media screen and (max-width: 550px) { 
+const ItemTitleAbout = styled(ItemTitle)`
+border-radius: 1000px;
+width: 60%;
+text-align: center;
+ @media screen and (max-width: 550px) { 
 
-        margin-top: 1rem;
-    }
-    
+    margin-top: 1rem;
+}
 
-    `
+`
+
+const AboutUs = () => {
 
     return (
         <Content className='about'>

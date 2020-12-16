@@ -218,7 +218,7 @@ export const ItemTitle = styled.h2`
     @media screen and (max-width: 400px) { 
      font-size: 0.75rem;
    }
-    @media screen and (max-width: 370px) { 
+    @media screen and (max-width: 355px) { 
      font-size: 0.7rem;
    }
     @media screen and (max-width: 330px) { 
