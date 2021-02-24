@@ -206,7 +206,7 @@ const Contact = () => {
                             <FeedbackGroup>
 
                                 <FeedbackLabel htmlFor="name">имя</FeedbackLabel>
-                                <FeedbackInput type="name" name="name" required className="feedback__form-control" id="name" placeholder=""></FeedbackInput>
+                                <FeedbackInput /* onChange={} */ type="name" name="name" required className="feedback__form-control" id="name" placeholder=""></FeedbackInput>
                                 {/*  <FeedbackInvalid>
                     Имя не должно содержать цифр
                 </FeedbackInvalid> */}

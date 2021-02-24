@@ -22,7 +22,7 @@ padding-left: 1rem;
 
 
 `
-function NavbarMobile() {
+const NavbarMobile = () => {
     const [status, setStatus] = useState('')
     console.log(useState())
     /* const removeMobileMenu = () => setStatus('') */
@@ -37,4 +37,4 @@ function NavbarMobile() {
     )
 }
 
-export default NavbarMobile
+export default navbarMobile

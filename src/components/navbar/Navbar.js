@@ -9,7 +9,7 @@ import NavbarMobile from './NavbarMobile';
 import NavbarPc from './NavbarPc';
 
 
-const NavbarContent = styled.div`
+const Navbar = styled.div`
     height: 5rem;
     width: 100%;
     display: flex;
@@ -22,16 +22,16 @@ height: 3rem;
 }
     `
 
-const Navbar = () => {
-    
+const navbar = () => {
+
     return (
-        <NavbarContent>
+        <Navbar>
             <Container>
                 <NavbarPc />
                 <NavbarMobile />
             </Container>
-        </NavbarContent>
+        </Navbar>
     )
 }
 
-export default Navbar
+export default navbar

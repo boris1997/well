@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import NavbarLogo from './NavbarLogo'
 
-const NavbarPcContent = styled.div`
+const NavbarPc = styled.div`
     height: 100%;
 
 padding-right: 1rem;
@@ -78,10 +78,10 @@ const LinkItem = styled(Link)`
 }
 
        `
-const NavbarPc = () => {
+const navbarPc = () => {
 
     return (
-        <NavbarPcContent>
+        <NavbarPc>
             <NavbarLogo />
             <Ul>
                 <LinkItem to='home'
@@ -132,8 +132,8 @@ const NavbarPc = () => {
                     offset={-100}
                 >Контакты</LinkItem>
             </Ul>
-        </NavbarPcContent>
+        </NavbarPc>
     )
 }
 
-export default NavbarPc
+export default navbarPc
